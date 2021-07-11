@@ -10,10 +10,16 @@ from pygame.sprite import Sprite, Group, spritecollideany
 from final_project_game import settings
 
 
-class Ground(Sprite):
+class Background(Sprite):
     def __init__(self, *args):
         super().__init__(*args)
-        self.image = Surface((40, 40)).convert()
+        self.image = pygame.image.load("final_project_game_images/HP0083.jpg.webp")
+        self.image = pygame.transform.scale(self.image, (settings.WORLD_WIDTH, settings.WORLD_HEIGHT))
+        #self.background = pygame.image.load("final_project_game_images/HP0083.jpg.webp")
+        self.rect = self.image.get_rect()
+
+
+        #self.image = pygame.transform.scale(self.background, (settings.WORLD_WIDTH, settings.WORLD_HEIGHT))
         self.world_rect = self.image.get_rect().copy()
         self.world_rect.bottom = settings.WORLD_HEIGHT
         #assert self.world_rect.width == settings.WORLD_WIDTH
@@ -124,14 +130,19 @@ class Game(Sprite):
         pygame.display.set_caption(("Play Game!"))
 
 
+
         self.player = Player()
         self.player_group = Group()
         self.player_group.add(self.player)
         self.other_characters = Group()
         self.cloud = Group()
         Game.next_level(self)
+        #self.back = Background()
         self.static_sprites = Group()
-        self.static_sprites.add(Ground())
+        self.static_sprites.add(Background())
+        #self.static_sprites.add(self.back)
+        #self.static_sprites.add(background)
+
         self.viewport = Viewport()
         self.viewport.update(self.player)
 
@@ -157,6 +168,7 @@ class Game(Sprite):
             clock.tick(30)
             print(count)
             if count > 200*settings.LEVEL_COUNT and self.player.alive():
+
                 Game.next_level(self)
 
     def next_level(self):
@@ -207,6 +219,8 @@ class Game(Sprite):
 
     def draw(self):
         self.screen.fill((0, 0, 0))
+        #self.screen.blit(self.back.background,(0,0),self.back.background.get_rect())
+        #self.viewport.draw_group(self.static_sprites,
         self.viewport.draw_group(self.static_sprites, self.screen)
         self.viewport.draw_group(self.player_group, self.screen)
         self.viewport.draw_group(self.other_characters, self.screen)
