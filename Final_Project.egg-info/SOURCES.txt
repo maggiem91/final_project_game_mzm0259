@@ -1,0 +1,9 @@
+setup.py
+Final_Project.egg-info/PKG-INFO
+Final_Project.egg-info/SOURCES.txt
+Final_Project.egg-info/dependency_links.txt
+Final_Project.egg-info/requires.txt
+Final_Project.egg-info/top_level.txt
+final_project_game/__init__.py
+final_project_game/my_game.py
+final_project_game/settings.py

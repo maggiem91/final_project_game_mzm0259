@@ -1,0 +1,15 @@
+recursive-include build *.py
+recursive-include dist *.gz
+recursive-include final_project_game *.DS_Store
+recursive-include final_project_game *.jpg
+recursive-include final_project_game *.markdown
+recursive-include final_project_game *.png
+recursive-include final_project_game *.pyc
+recursive-include final_project_game *.txt
+recursive-include venv *.APACHE
+recursive-include venv *.BSD
+recursive-include venv *.pth
+recursive-include venv *.py
+recursive-include venv *.rst
+recursive-include venv *.txt
+recursive-include venv *.typed
