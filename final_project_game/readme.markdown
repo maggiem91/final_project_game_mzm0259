@@ -3,7 +3,7 @@
     a game with the end goal of keeping our hedgehog alive
 
 ## Installation
-    XXXXXXXXXXXXX
+    pip install -e .
 
 ### Usage/How to Play
     use LEFT arrow to move hedgehog left
