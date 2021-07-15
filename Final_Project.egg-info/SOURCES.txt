@@ -30,6 +30,7 @@ final_project_game/final_project_game_images/hedgehog_left.png
 final_project_game/final_project_game_images/hedgehog_right.png
 final_project_game/final_project_game_images/red_monster.png
 final_project_game/final_project_game_images/scrolling_mushroom_background.png
+final_project_game/final_project_game_images/space_bar.png
 final_project_game/final_project_game_images/yellow_monster.png
 venv/lib/python3.7/site-packages/check_manifest.py
 venv/lib/python3.7/site-packages/distutils-precedence.pth
