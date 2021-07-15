@@ -1,3 +1,4 @@
+.DS_Store
 MANIFEST.in
 setup.py
 Final_Project.egg-info/PKG-INFO
@@ -8,15 +9,13 @@ dist/Final_Project-0.0.0.macosx-10.14-x86_64.tar.gz
 dist/Final_Project-0.0.0.tar.gz
 dist/Final_Project-0.0.1.macosx-10.14-x86_64.tar.gz
 dist/Final_Project-0.0.1.tar.gz
-dist/Final_Project-0.0.1/dist/Final_Project-0.0.0.macosx-10.14-x86_64.tar.gz
-dist/Final_Project-0.0.1/dist/Final_Project-0.0.0.tar.gz
-dist/Final_Project-0.0.1/dist/Final_Project-0.0.1.macosx-10.14-x86_64.tar.gz
-dist/Final_Project-0.0.1/dist/Final_Project-0.0.1.tar.gz
 final_project_game/.DS_Store
 final_project_game/LICENSE.txt
 final_project_game/__init__.py
 final_project_game/my_game.py
+final_project_game/readme.md
 final_project_game/settings.py
+final_project_game/Final_Project.egg-info/PKG-INFO
 final_project_game/Final_Project.egg-info/SOURCES.txt
 final_project_game/Final_Project.egg-info/dependency_links.txt
 final_project_game/Final_Project.egg-info/requires.txt
@@ -30,6 +29,7 @@ final_project_game/final_project_game_images/dead_hedgehog.png
 final_project_game/final_project_game_images/hedgehog_left.png
 final_project_game/final_project_game_images/hedgehog_right.png
 final_project_game/final_project_game_images/red_monster.png
+final_project_game/final_project_game_images/scrolling_mushroom_background.png
 final_project_game/final_project_game_images/yellow_monster.png
 venv/lib/python3.7/site-packages/check_manifest.py
 venv/lib/python3.7/site-packages/distutils-precedence.pth

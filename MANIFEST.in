@@ -1,9 +1,9 @@
 recursive-include build *.py
 recursive-include dist *.gz
-recursive-include final_project_game/final_project_game_images *
+recursive-include final_project_game/final_project_game_images *.png
 recursive-include final_project_game *.DS_Store
 recursive-include final_project_game *.jpg
-recursive-include final_project_game *.markdown
+recursive-include final_project_game *.md
 recursive-include final_project_game *.png
 recursive-include final_project_game *.pyc
 recursive-include final_project_game *.txt
